@@ -197,7 +197,7 @@ All project code and design work © Anthony W Smith. All rights reserved.
 
 ---
 
-## 🔍 SEO & Accessibility Update (2026-07-25)
+## 🔍 SEO & Accessibility Update (2026-08-15)
 
 ### Scope Completed
 
@@ -205,16 +205,17 @@ This update focused on:
 
 - SEO meta tag improvements for ranking readiness
 - Accessibility baseline checks and fixes
-- New root sitemap creation
+- Root sitemap and crawler guidance creation
 
 ### Files Updated
 
-| File             | Changes                          |
-| ---------------- | -------------------------------- |
-| `index.html`     | SEO + accessibility improvements |
-| `thank_you.html` | SEO + accessibility improvements |
-| `taf/index.html` | SEO + accessibility improvements |
-| `sitemap.xml`    | New file created                 |
+| File             | Changes                           |
+| ---------------- | --------------------------------- |
+| `index.html`     | SEO + accessibility improvements  |
+| `thank_you.html` | SEO + accessibility improvements  |
+| `taf/index.html` | SEO + accessibility improvements  |
+| `sitemap.xml`    | Expanded site map for key pages   |
+| `robots.txt`     | Added crawler guidance to sitemap |
 
 ### SEO Improvements Applied
 
@@ -262,22 +263,25 @@ This update focused on:
 - **hsk** pages: canonical + Open Graph + Twitter + skip links already present
 - **jubilee** pages: canonical + Open Graph + Twitter + skip links already present
 
-### Sitemap
+### Sitemap & Crawler Guidance
 
-Created new root sitemap at:
+Created and finalized:
 
-- **`sitemap.xml`**
+- `sitemap.xml` at the root of the site
+- `robots.txt` pointing to <https://smithaw.com/sitemap.xml>
 
 #### Included URLs
 
 - <https://smithaw.com/>
 - Access21 pages under `/access21/`
+- HSK pages under `https://heritagesoulkitchen.com/`
 - Jubilee pages under `/jubilee/`
+- TAF homepage at <https://www.tellafriendlandscaping.com/>
 
-> **Note:** `thank_you.html` is intentionally omitted from the sitemap because it is set to `noindex`.
+> **Note:** `thank_you.html` remains intentionally omitted from the sitemap because it is set to `noindex`.
 
-### Next Recommendations
+### Recommended Next Steps
 
-- [ ] Add a root `robots.txt` that points crawlers to <https://smithaw.com/sitemap.xml>
-- [ ] Run automated audits (Lighthouse + WAVE) for contrast, heading order, and focus states
-- [ ] Add Organization/WebSite JSON-LD to additional pages if those pages are primary entry pages
+- [ ] Run Lighthouse + WAVE audits for contrast, heading order, and focus states
+- [ ] Add Organization/WebSite JSON-LD to any primary landing page that needs richer search visibility
+- [ ] Review and refresh page-specific keywords as new content is added
