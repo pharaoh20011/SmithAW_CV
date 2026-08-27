@@ -11492,6 +11492,9 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 12pt;
 }
+.portfolio-project-details ul {
+  font-family: "Open Sans", sans-serif;
+}
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.8rem;
