@@ -1,5 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './components/theme/ThemeProvider';
+import { DesignSystemShowcase } from './components/DesignSystemShowcase';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
 import { ProjectsPage } from './pages/ProjectsPage';
@@ -9,18 +11,21 @@ import { ContactPage } from './pages/ContactPage';
 
 export const App: React.FC = () => {
   return (
-    <Router>
-      <main className="min-h-screen bg-light text-dark-slate">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/projects/:slug" element={<ProjectDetailPage />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
-      </main>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <main className="min-h-screen bg-surface-light dark:bg-surface-dark text-content-light-primary dark:text-content-dark-primary font-body transition-colors duration-normal">
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/design-system" element={<DesignSystemShowcase />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/projects/:slug" element={<ProjectDetailPage />} />
+            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+      </Router>
+    </ThemeProvider>
   );
 };
 

@@ -3,31 +3,72 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-brand-primary: #2F4399;
+    --color-brand-supporting: #233372;
+    --color-brand-accent: #5B6FE8;
+    --color-brand-soft: #EEF1FF;
+
+    --color-bg-light: #F7F8FA;
+    --color-surface-light: #FFFFFF;
+    --color-text-primary-light: #17191F;
+    --color-text-secondary-light: #4B5563;
+    --color-text-muted-light: #6B7280;
+    --color-border-light: #E5E7EB;
+
+    --color-bg-dark: #111318;
+    --color-surface-dark: #181B22;
+    --color-surface-elevated-dark: #20242D;
+    --color-text-primary-dark: #F5F7FA;
+    --color-text-secondary-dark: #D1D5DB;
+    --color-text-muted-dark: #9CA3AF;
+    --color-border-dark: #2A2E38;
+  }
+
   html {
     scroll-behavior: smooth;
-    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
   body {
-    @apply bg-light text-dark-slate antialiased selection:bg-primary selection:text-white dark:bg-secondary-dark dark:text-gray-100;
+    @apply bg-surface-light text-content-light-primary antialiased selection:bg-brand-soft selection:text-brand-primary dark:bg-surface-dark dark:text-content-dark-primary transition-colors duration-normal;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply font-bold tracking-tight text-content-light-primary dark:text-content-dark-primary;
   }
 
-  /* Accessible focus indicators */
+  /* Accessible focus indicators (WCAG 2.2 AA) */
   *:focus-visible {
-    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-white dark:ring-offset-secondary-dark;
+    @apply outline-none ring-2 ring-brand-accent ring-offset-2 ring-offset-surface-light dark:ring-offset-surface-dark;
   }
 }
 
 @layer utilities {
-  .font-caveat {
-    font-family: 'Caveat', cursive;
+  .font-heading {
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
-  .text-gradient {
-    @apply bg-gradient-to-r from-primary to-emerald-400 bg-clip-text text-transparent;
+  .font-body {
+    font-family: Inter, sans-serif;
+  }
+
+  .font-mono-tech {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface-light dark:focus-visible:ring-offset-surface-dark;
+  }
+}
+
+/* Reduced Motion Override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
