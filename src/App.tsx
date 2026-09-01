@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './components/theme/ThemeProvider';
+import { Layout } from './components/layout/Layout';
 import { DesignSystemShowcase } from './components/DesignSystemShowcase';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -13,7 +14,7 @@ export const App: React.FC = () => {
   return (
     <ThemeProvider>
       <Router>
-        <main className="min-h-screen bg-surface-light dark:bg-surface-dark text-content-light-primary dark:text-content-dark-primary font-body transition-colors duration-normal">
+        <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/design-system" element={<DesignSystemShowcase />} />
@@ -23,7 +24,7 @@ export const App: React.FC = () => {
             <Route path="/resume" element={<ResumePage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
-        </main>
+        </Layout>
       </Router>
     </ThemeProvider>
   );
