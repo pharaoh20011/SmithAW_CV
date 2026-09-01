@@ -1,0 +1,12 @@
+# robots.txt for Jubilee Junction Christian Fellowship
+# https://smithaw.com/jubilee/
+
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://smithaw.com/jubilee/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 10

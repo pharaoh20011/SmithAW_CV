@@ -1,0 +1,41 @@
+<form class="row g-3" aria-label="Catering Inquiry Form">
+  <div class="col-md-6">
+    <label for="fullName" class="form-label">Full Name</label>
+    <input type="text" class="form-control" id="fullName" name="fullName" autocomplete="name" required />
+  </div>
+  <div class="col-md-6">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email" autocomplete="email" required />
+  </div>
+  <div class="col-md-6">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel" required />
+  </div>
+  <div class="col-md-6">
+    <label for="eventType" class="form-label">Event Type</label>
+    <select id="eventType" name="eventType" class="form-select" required>
+      <option value="" selected disabled>Select event type</option>
+      <option>Wedding</option>
+      <option>Corporate Event</option>
+      <option>Birthday Party</option>
+      <option>Holiday Gathering</option>
+      <option>Private Dinner</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="col-md-6">
+    <label for="guestCount" class="form-label">Estimated Guests</label>
+    <input type="number" class="form-control" id="guestCount" name="guestCount" min="2" max="500" required />
+  </div>
+  <div class="col-md-6">
+    <label for="eventDate" class="form-label">Preferred Date</label>
+    <input type="date" class="form-control" id="eventDate" name="eventDate" required />
+  </div>
+  <div class="col-12">
+    <label for="message" class="form-label">Tell us about your event</label>
+    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-brand">Submit Inquiry</button>
+  </div>
+</form>

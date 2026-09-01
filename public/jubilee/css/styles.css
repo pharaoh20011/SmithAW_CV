@@ -1,0 +1,495 @@
+/* Color Palette */
+:root {
+  --primary-color: #439aa0;
+  --accent-color: #485362;
+  --secondary-color: #283041;
+  --text-color: #070d20;
+  --background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Global main content background */
+main,
+.main-content,
+#main-content,
+.content,
+.page-content {
+  background-color: #e6dfd4;
+}
+
+/* --- Header --- */
+.main-header {
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/beach-600.png");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.header-col {
+  height: 100%;
+}
+
+.col-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-row {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-row {
+  justify-content: flex-start;
+}
+
+.header-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* --- Sidebar Middle Section --- */
+.middle-section {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar-column {
+  width: 200px;
+  background-color: #485362;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #ddd;
+}
+
+.side-row {
+  padding: 20px;
+  width: 100%;
+}
+.row-nav ul {
+  list-style: none;
+}
+.row-nav li {
+  margin-bottom: 10px;
+}
+.row-nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.row-blank {
+  flex: 1;
+}
+
+/* Navigation Colors */
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-link.active {
+  color: #ffffff;
+}
+
+.nav-link:visited {
+  color: #ffffff;
+}
+
+/* Make image containers behave properly */
+.image-box,
+.mini-box.image-box {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Force images to fill their boxes */
+.image-box img,
+.mini-box.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Target ONLY the small text box above the calendar */
+.grid-item.nested-vertical .mini-box.text-box {
+  padding: 12px 10px;
+  min-height: 0;
+}
+
+/* --- Content Area Grid --- */
+.content-area {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.grid-item {
+  padding: 50px;
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 250px;
+}
+
+.grid-item.nested-vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item.nested-vertical .mini-box.image-box {
+  flex-grow: 5;
+}
+
+.grid-item.nested-vertical .mini-box.text-box {
+  flex-shrink: 0;
+}
+
+/* Alignment adjustment for row 2 right */
+.align-top {
+  justify-content: flex-start !important;
+  align-self: start;
+}
+
+/* Centering the list in the 4th grid item */
+.mission-list-item {
+  align-items: center;
+  text-align: left;
+}
+
+.mission-list-item ul {
+  list-style-position: inside;
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* Row 2 Left Column (Nested Vertical) */
+.nested-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  padding: 0;
+}
+
+.mini-box {
+  flex: 1;
+  border: 1px solid #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image styles to ensure they fit boxes */
+.mini-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- Footer --- */
+footer {
+  background-image: url(../img/footer_439AA0_.png);
+  padding: 40px 20px;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Column Alignment */
+.footer-col.left {
+  text-align: left;
+}
+.footer-col.middle {
+  text-align: center;
+}
+.footer-col.right {
+  text-align: right;
+}
+
+/* Navigation Styling */
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Stacked Link Logic */
+.multi-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+/* Social Links Layout */
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+/* Copyright Text */
+.footer-col.left p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-link-white,
+.footer-link-white:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-link-white:hover {
+  text-decoration: underline;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.map-iframe {
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* Pastor Page Grid Layout */
+.pastor-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+}
+
+.pastor-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  padding: 20px;
+  background-color: #ebe9e9;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.pastor-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pastor-grid-item:has(.pastor-img) {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Faith / Mission Specific Grid */
+.mission-faith-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 80px;
+  width: 100%;
+}
+
+.grid-cell {
+  padding: 20px;
+  border: 0px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.image-placeholder-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.placeholder-img {
+  max-width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border: 0px dashed #ffffff;
+  min-height: 100px;
+  flex: 1 1 100px;
+}
+
+/* Faith / Mission split container */
+.split-container {
+  display: flex;
+  align-items: center;
+  border: 0px solid #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.mission-faith-grid .grid-cell {
+  background-color: #ebe9e9;
+  padding: 20px;
+  border-radius: 22px;
+}
+
+/* Remove background from the 2 right-hand columns */
+.mission-faith-grid .grid-cell:nth-child(2),
+.mission-faith-grid .grid-cell:nth-child(3) {
+  background-color: transparent;
+  padding: 0;
+}
+
+.mission-faith-grid img {
+  display: block;
+  margin: 0 auto;
+}
+
+.text-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.image-side {
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.image-side img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Services / Directions Specific Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.services-grid .services-item:first-child {
+  background-color: #ebe9e9;
+  padding: 20px;
+  border-radius: 22px;
+}
+
+.services-grid .map-placeholder {
+  background-color: #ebe9e9;
+  padding: 15px;
+  border-radius: 22px;
+}
+
+.map-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 22px;
+  min-height: 250px;
+}
+
+.map-placeholder iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+.services-item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 10px;
+}
+
+.split-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.img-placeholder img {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  display: block;
+  min-height: 150px;
+}
+
+/* Rounded corners for all main content images */
+main img,
+.main-content img,
+#main-content img,
+.content img,
+.page-content img {
+  border-radius: 22px;
+}
+
+.text-box {
+  background-color: #ebe9e9;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+/* Keep images from overflowing on smaller screens. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Skip to content link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #439aa0;
+  color: #ffffff;
+  padding: 8px 16px;
+  z-index: 1000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

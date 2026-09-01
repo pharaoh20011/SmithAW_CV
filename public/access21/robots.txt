@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smithaw.com/access21/sitemap.xml

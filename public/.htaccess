@@ -1,0 +1,18 @@
+# AW Smith Portfolio - Apache Rewrite & Security Directives
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Ensure directories append trailing slashes (e.g. /access21 -> /access21/)
+  DirectorySlash On
+
+  # Rule 1: Serve existing physical files directly (contact.php, pdfs, images, sitemap.xml)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+
+  # Rule 2: Serve existing physical directories directly (/access21/, /ghcookwriter/, /hsk/, /jubilee/, /taf/)
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Rule 3: SPA Fallback - Rewrite all virtual React routes to root index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
