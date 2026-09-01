@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
   // Initialize the motion typing effect
   var typed = new Typed("#typed-text", {
     strings: [
-      "a Front-end Developer ",
+      "a Front-End Developer ",
       "a Graphic Designer",
       "a Tech Specialist",
       "Anthony Smith",
