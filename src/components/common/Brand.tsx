@@ -16,18 +16,27 @@ export const Brand: React.FC<BrandProps> = ({
     <Link
       to="/"
       onClick={onClick}
-      className={`group flex items-center gap-3 focus-ring rounded-brand-xs py-1 transition-opacity hover:opacity-90 ${className}`}
+      className={`group flex items-center gap-3 focus-ring rounded-brand-xs py-1 transition-opacity hover:opacity-95 ${className}`}
       aria-label="Anthony W. Smith - Home"
     >
-      <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-brand-sm bg-brand-primary text-white dark:bg-brand-accent flex items-center justify-center font-heading font-bold text-sm sm:text-base tracking-wider shadow-brand-subtle group-hover:scale-105 transition-transform duration-fast shrink-0">
-        AWS
+      {/* Official AWS Brand Mark Image */}
+      <div className="relative w-9 h-9 sm:w-10 sm:h-10 rounded-brand-sm overflow-hidden border border-brand-primary/20 dark:border-brand-accent/30 bg-surface-light dark:bg-surface-dark-card flex items-center justify-center shadow-brand-subtle group-hover:scale-105 transition-transform duration-fast shrink-0">
+        <img
+          src="/assets/img/favicon_close_logo.png"
+          alt="AWS Brand Logo"
+          width={40}
+          height={40}
+          className="w-full h-full object-contain p-0.5"
+        />
       </div>
+
+      {/* Brand Name & Tagline */}
       <div className="flex flex-col justify-center">
-        <span className="font-heading font-bold text-base sm:text-lg tracking-tight text-content-light-primary dark:text-content-dark-primary group-hover:text-brand-primary dark:group-hover:text-brand-accent transition-colors">
+        <span className="font-heading font-extrabold text-base sm:text-lg tracking-tight text-content-light-primary dark:text-content-dark-primary group-hover:text-brand-primary dark:group-hover:text-brand-accent transition-colors">
           Anthony W. Smith
         </span>
         {showTagline && (
-          <span className="text-[11px] sm:text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted hidden sm:inline-block leading-none">
+          <span className="text-[11px] sm:text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted hidden sm:inline-block leading-none mt-0.5">
             Front-End Developer &amp; UI/UX Designer
           </span>
         )}

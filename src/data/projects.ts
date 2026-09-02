@@ -2,6 +2,25 @@ import { Project } from '../types';
 
 export const FEATURED_PROJECTS: Project[] = [
   {
+    id: 'ghcookwriter-v2',
+    slug: 'ghcookwriter-v2',
+    title: 'GHCOOKwriter-V2',
+    subtitle: 'Flagship Client Design & Author Publishing Showcase',
+    category: 'branding',
+    date: '2025',
+    stack: ['UI/UX Design', 'HTML5', 'CSS3', 'JavaScript', 'Branding', 'Typography'],
+    description: 'Flagship client design and development showcase presenting author G.H. Cook’s literary portfolio, media appearances, book release features, and "The Encounter Trilogy" presentation through custom visual design, clear typography hierarchy, and responsive UI layout.',
+    keyFeatures: [
+      'Client-facing UI/UX & visual design system',
+      'The Encounter Trilogy presentation',
+      'Responsive media & interview gallery',
+      'Newsletter signup & contact integration'
+    ],
+    image: '/assets/img/portfolio/ghcookwriter.png',
+    liveDemoUrl: '/ghcookwriter/index.html',
+    isSubProject: true,
+  },
+  {
     id: 'relocatia',
     slug: 'relocatia',
     title: 'Relocatia Platform',
@@ -9,7 +28,7 @@ export const FEATURED_PROJECTS: Project[] = [
     category: 'web-app',
     date: '2026',
     stack: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS'],
-    description: 'Full-stack relocation web app featuring client portals, document uploading, milestone progress tracking, and automated task management.',
+    description: 'Full-stack relocation web application featuring client portals, document uploading, milestone progress tracking, and automated task management.',
     keyFeatures: [
       'Interactive client portal & dashboard',
       'Document submission & status tracking',
@@ -60,22 +79,40 @@ export const FEATURED_PROJECTS: Project[] = [
     isSubProject: true,
   },
   {
-    id: 'ghcookwriter',
-    slug: 'ghcookwriter',
-    title: 'GHCOOKwriter Author Site',
-    subtitle: 'Literary Showcase & Media Portfolio',
+    id: 'access21',
+    slug: 'access21',
+    title: 'Access21 Platform',
+    subtitle: 'Web Hosting & Digital Portal Showcase',
     category: 'html-css-js',
     date: '2024',
-    stack: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
-    description: 'Author & publishing portfolio presenting published works, media appearances, reader newsletter signups, and direct contact options.',
+    stack: ['HTML5', 'CSS3', 'JavaScript', 'Web Architecture'],
+    description: 'Tech portal and web hosting service showcase presenting hosting tiers, technical support documentation, and client portal layout.',
     keyFeatures: [
-      'Book publication showcase with sample chapters',
-      'Responsive media & interview gallery',
-      'Newsletter subscription integration',
-      'Custom typography & clean layout'
+      'Hosting package feature comparisons',
+      'Client support & knowledge base UI',
+      'Clean grid layout & responsive navigation'
     ],
-    image: '/assets/img/portfolio/ghcookwriter.png',
-    liveDemoUrl: '/ghcookwriter/index.html',
+    image: '/assets/img/portfolio/access21.png',
+    liveDemoUrl: '/access21/index.html',
+    pdfUrl: '/assets/img/portfolio/Access21_Brand.pdf',
+    isSubProject: true,
+  },
+  {
+    id: 'jubilee',
+    slug: 'jubilee',
+    title: 'Jubilee Junction',
+    subtitle: 'Interactive Community Showcase',
+    category: 'html-css-js',
+    date: '2024',
+    stack: ['HTML5', 'CSS3', 'JavaScript', 'Event Systems'],
+    description: 'Community event showcase site featuring event calendars, announcements, interactive galleries, and visitor engagement tools.',
+    keyFeatures: [
+      'Event schedule & calendar component',
+      'Interactive photo gallery',
+      'Community announcement feed'
+    ],
+    image: '/assets/img/portfolio/jubilee_junction.png',
+    liveDemoUrl: '/jubilee/index.html',
     isSubProject: true,
   },
 ];
