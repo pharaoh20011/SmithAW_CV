@@ -63,14 +63,16 @@ export const Hero: React.FC = () => {
               <div className="absolute -inset-2 bg-gradient-to-tr from-brand-primary/20 to-brand-accent/20 dark:from-brand-accent/15 dark:to-brand-primary/15 rounded-brand-xl blur-lg opacity-75 -z-10" />
 
               <div className="relative rounded-brand-lg overflow-hidden border-2 border-stroke-light dark:border-stroke-dark shadow-brand-elevated bg-surface-light dark:bg-surface-dark-card">
-                <img
-                  src="/assets/img/me_san_pedro2_350x525.png"
-                  alt="Portrait of Anthony W. Smith, Front-End Developer and UI/UX Designer"
-                  width={350}
-                  height={525}
-                  loading="eager"
-                  className="w-full h-auto object-cover object-center max-h-[460px]"
-                />
+                <div className="w-full bg-surface-light dark:bg-surface-dark-elevated">
+                  <img
+                    src="/assets/img/me_san_pedro2_350x525.png"
+                    alt="Portrait of Anthony W. Smith, Front-End Developer and UI/UX Designer"
+                    width={350}
+                    height={525}
+                    loading="eager"
+                    className="w-full h-auto object-cover object-[center_top] max-h-[520px]"
+                  />
+                </div>
                 <div className="p-4 bg-surface-light/95 dark:bg-surface-dark-card/95 backdrop-blur-xs border-t border-stroke-light dark:border-stroke-dark">
                   <p className="font-heading font-bold text-sm text-content-light-primary dark:text-content-dark-primary">
                     Anthony W. Smith
