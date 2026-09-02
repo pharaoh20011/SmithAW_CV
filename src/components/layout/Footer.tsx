@@ -35,6 +35,7 @@ export const PRESERVED_PROJECTS = [
   { name: 'GHCookwriter', path: '/ghcookwriter/index.html' },
   { name: 'Heritage Soul Kitchen', path: '/hsk/index.html' },
   { name: 'Jubilee Junction Christian Fellowship', path: '/jubilee/index.html' },
+  { name: 'Tell-A-Friend Landscaping', path: '/taf/index.html' },
 ];
 
 export const Footer: React.FC = () => {
