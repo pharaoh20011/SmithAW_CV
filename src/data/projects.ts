@@ -16,8 +16,8 @@ export const FEATURED_PROJECTS: Project[] = [
       'Responsive media & interview gallery',
       'Newsletter signup & contact integration'
     ],
-    image: '/assets/img/portfolio/ghcookwriter.png',
-    liveDemoUrl: '/ghcookwriter/index.html',
+    image: '/assets/img/portfolio/ghcookwriter_2.png',
+    liveDemoUrl: 'https://www.ghcookwriter.com',
     isSubProject: true,
   },
   {
