@@ -2,11 +2,10 @@ import React, { useEffect } from 'react';
 import { Container } from '../components/ui/Container';
 import { Section } from '../components/ui/Section';
 import { Card } from '../components/ui/Card';
-import { Badge } from '../components/ui/Badge';
 import { ResumeCTA } from '../components/common/ResumeCTA';
 import { SKILL_CATEGORIES } from '../data/skills';
 import { CERTIFICATIONS } from '../data/certifications';
-import { Award, Briefcase, GraduationCap, Download } from 'lucide-react';
+import { Award, Briefcase, GraduationCap } from 'lucide-react';
 
 export const ResumePage: React.FC = () => {
   useEffect(() => {
@@ -26,7 +25,7 @@ export const ResumePage: React.FC = () => {
               Anthony W. Smith
             </h1>
             <p className="text-content-light-secondary dark:text-content-dark-secondary font-body mt-2">
-              Front-End Developer &amp; UI/UX Designer &bull; Technical Support Specialist
+              Front-End Developer &amp; UI/UX Designer &bull; Enterprise Technical Support Specialist
             </p>
           </div>
           <div>
@@ -47,7 +46,7 @@ export const ResumePage: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm font-body text-content-light-secondary dark:text-content-dark-secondary leading-relaxed">
-              Technical support veteran pivoting into UI/UX and Front-End Development. Certified in Meta Front-End, WordPress, and AWS, combining enterprise troubleshooting expertise with advanced prompt engineering to rapidly create clean, intuitive, and responsive user interfaces.
+              Experienced Front-End Developer, UI/UX Designer, and Enterprise Technical Support Specialist. Combining formal graphic design education, hands-on enterprise application support at State Street Bank Corp., and modern front-end engineering expertise (React 18, TypeScript, Tailwind CSS, Gutenberg WordPress) to build clean, accessible, and user-centered web applications.
             </p>
           </Card>
 
@@ -58,23 +57,51 @@ export const ResumePage: React.FC = () => {
               <span>Professional Experience</span>
             </h2>
 
-            <div className="space-y-6 border-l-2 border-brand-primary/30 dark:border-brand-accent/30 pl-4 md:pl-6 ml-2">
-              <div className="space-y-1">
+            <div className="space-y-8 border-l-2 border-brand-primary/30 dark:border-brand-accent/30 pl-4 md:pl-6 ml-2">
+              {/* Position #1 — State Street Bank Corp. */}
+              <div className="space-y-2">
+                <div className="flex flex-wrap items-center justify-between text-sm">
+                  <h3 className="font-heading font-bold text-base text-content-light-primary dark:text-content-dark-primary">
+                    Sr. SAS Help Desk Representative
+                  </h3>
+                  <span className="text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted">05/2017 &ndash; Present</span>
+                </div>
+                <p className="text-xs font-mono-tech text-brand-primary dark:text-brand-accent">State Street Bank Corp.</p>
+                <ul className="list-disc pl-4 text-xs font-body text-content-light-secondary dark:text-content-dark-secondary space-y-1.5 pt-1">
+                  <li>
+                    <strong className="text-content-light-primary dark:text-content-dark-primary">Platform Support:</strong> Managed user access and high availability for over 50 enterprise and web-based applications.
+                  </li>
+                  <li>
+                    <strong className="text-content-light-primary dark:text-content-dark-primary">Cross-Functional Collaboration:</strong> Partnered with senior management in an Agile-aligned environment to resolve complex technical incidents.
+                  </li>
+                  <li>
+                    <strong className="text-content-light-primary dark:text-content-dark-primary">Technical Documentation:</strong> Authored comprehensive knowledge base articles, documenting technical processes and system logic for team use.
+                  </li>
+                  <li>
+                    <strong className="text-content-light-primary dark:text-content-dark-primary">Incident Management:</strong> Resolved 20&ndash;50 high-priority support requests daily while maintaining top-tier user satisfaction.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Position #2 — SmithAW Digital Solutions */}
+              <div className="space-y-2">
                 <div className="flex flex-wrap items-center justify-between text-sm">
                   <h3 className="font-heading font-bold text-base text-content-light-primary dark:text-content-dark-primary">
                     Front-End &amp; UI/UX Developer / Freelance Consultant
                   </h3>
-                  <span className="text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted">2022 &ndash; Present</span>
+                  <span className="text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted">2025 &ndash; Present</span>
                 </div>
                 <p className="text-xs font-mono-tech text-brand-primary dark:text-brand-accent">SmithAW Digital Solutions</p>
-                <ul className="list-disc pl-4 text-xs font-body text-content-light-secondary dark:text-content-dark-secondary space-y-1 pt-1">
-                  <li>Designed and developed client projects including GHCOOKwriter Author Site, Relocatia Platform, HSK, and TAF Landscaping.</li>
-                  <li>Implemented responsive SPAs using React 18, TypeScript, Tailwind CSS, and REST API integrations.</li>
-                  <li>Ensured strict WCAG 2.2 AA accessibility compliance across all digital builds.</li>
+                <ul className="list-disc pl-4 text-xs font-body text-content-light-secondary dark:text-content-dark-secondary space-y-1.5 pt-1">
+                  <li>Designed and developed client-facing websites and digital experiences combining front-end development, UI/UX design, responsive design, visual branding, and accessibility.</li>
+                  <li>Built modern web applications using React 18, TypeScript, Tailwind CSS, HTML5, CSS3, and JavaScript.</li>
+                  <li>Created custom WordPress websites using the Gutenberg block editor (Harrisons &amp; Sons, Vacation Dominican Republic).</li>
+                  <li>Applied WCAG 2.2 AA accessibility principles and responsive design practices across digital builds.</li>
                 </ul>
               </div>
 
-              <div className="space-y-1">
+              {/* Position #3 — Insight Global / Assurant Solutions */}
+              <div className="space-y-2">
                 <div className="flex flex-wrap items-center justify-between text-sm">
                   <h3 className="font-heading font-bold text-base text-content-light-primary dark:text-content-dark-primary">
                     Contractor / Technical Support Analyst
@@ -82,7 +109,7 @@ export const ResumePage: React.FC = () => {
                   <span className="text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted">06/2015 &ndash; 03/2016</span>
                 </div>
                 <p className="text-xs font-mono-tech text-brand-primary dark:text-brand-accent">Insight Global / Assurant Solutions</p>
-                <ul className="list-disc pl-4 text-xs font-body text-content-light-secondary dark:text-content-dark-secondary space-y-1 pt-1">
+                <ul className="list-disc pl-4 text-xs font-body text-content-light-secondary dark:text-content-dark-secondary space-y-1.5 pt-1">
                   <li>Resolved complex software and hardware issues via remote access tools (Bomgar, BigFix) for enterprise environments.</li>
                   <li>Utilized Active Directory and database structures, establishing deep insight into backend data systems powering frontend UIs.</li>
                 </ul>
@@ -114,12 +141,15 @@ export const ResumePage: React.FC = () => {
               </h2>
               <div className="space-y-3 text-xs font-body">
                 <div>
-                  <h3 className="font-bold text-content-light-primary dark:text-content-dark-primary">Graphic Design Certificate</h3>
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bold text-content-light-primary dark:text-content-dark-primary">Graphic Design Certificate</h3>
+                    <span className="font-mono-tech text-content-light-muted dark:text-content-dark-muted">01/2004</span>
+                  </div>
                   <p className="text-content-light-muted dark:text-content-dark-muted font-mono-tech">Miami Dade College</p>
                 </div>
                 <div>
                   <h3 className="font-bold text-content-light-primary dark:text-content-dark-primary">CompTIA A+ IT Certification Training</h3>
-                  <p className="text-content-light-muted dark:text-content-dark-muted font-mono-tech">Hands-on IT Support Training, Washington, DC</p>
+                  <p className="text-content-light-muted dark:text-content-dark-muted font-mono-tech">Computer Learning Center &bull; Washington, DC</p>
                 </div>
               </div>
             </Card>

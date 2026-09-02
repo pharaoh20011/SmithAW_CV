@@ -1,6 +1,6 @@
 // TypeScript Type Definitions for Portfolio Redesign
 
-export type ProjectCategory = 'web-app' | 'html-css-js' | 'wordpress' | 'branding';
+export type ProjectCategory = 'web-app' | 'html-css-js' | 'wordpress' | 'branding' | 'graphic-design';
 
 export interface Project {
   id: string;

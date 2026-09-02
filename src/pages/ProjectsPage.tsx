@@ -52,6 +52,10 @@ export const ProjectsPage: React.FC = () => {
                     <Badge variant="brand" icon={<Award className="w-3 h-3" />}>
                       Flagship Client Project
                     </Badge>
+                  ) : project.category === 'wordpress' ? (
+                    <Badge variant="accent">WordPress Gutenberg</Badge>
+                  ) : project.category === 'graphic-design' ? (
+                    <Badge variant="brand">Graphic Design &amp; Branding</Badge>
                   ) : (
                     <Badge variant={project.isSubProject ? 'accent' : 'brand'}>
                       {project.isSubProject ? 'Preserved Static App' : 'SPA Web App'}

@@ -99,7 +99,7 @@ export const AboutPage: React.FC = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-brand-primary dark:bg-brand-accent shrink-0 mt-1.5" />
-                  <span>WordPress CMS Custom Theme &amp; Site Building</span>
+                  <span>WordPress Gutenberg Layout &amp; Site Design</span>
                 </li>
               </ul>
             </Card>
