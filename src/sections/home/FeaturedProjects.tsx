@@ -10,7 +10,8 @@ import { ExternalLink, FileText, Sparkles, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const FeaturedProjects: React.FC = () => {
-  const flagshipProject = FEATURED_PROJECTS[0]; // GHCOOKwriter-V2
+  // Single source of truth consumed from src/data/projects.ts
+  const flagshipProject = FEATURED_PROJECTS[0]; // GHCOOKwriter Author Site
   const otherProjects = FEATURED_PROJECTS.slice(1, 4); // Relocatia, HSK, TAF
 
   return (
@@ -22,7 +23,7 @@ export const FeaturedProjects: React.FC = () => {
           subtitle="Explore client design projects, web applications, and preserved live static sub-projects."
         />
 
-        {/* Flagship Client Project Spotlight: GHCOOKwriter-V2 */}
+        {/* Flagship Client Project Spotlight: GHCOOKwriter Author Site */}
         {flagshipProject && (
           <div className="mb-12">
             <Card

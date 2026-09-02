@@ -68,7 +68,7 @@ export const ResumePage: React.FC = () => {
                 </div>
                 <p className="text-xs font-mono-tech text-brand-primary dark:text-brand-accent">SmithAW Digital Solutions</p>
                 <ul className="list-disc pl-4 text-xs font-body text-content-light-secondary dark:text-content-dark-secondary space-y-1 pt-1">
-                  <li>Designed and developed client projects including GHCOOKwriter-V2, Relocatia Platform, HSK, and TAF Landscaping.</li>
+                  <li>Designed and developed client projects including GHCOOKwriter Author Site, Relocatia Platform, HSK, and TAF Landscaping.</li>
                   <li>Implemented responsive SPAs using React 18, TypeScript, Tailwind CSS, and REST API integrations.</li>
                   <li>Ensured strict WCAG 2.2 AA accessibility compliance across all digital builds.</li>
                 </ul>
