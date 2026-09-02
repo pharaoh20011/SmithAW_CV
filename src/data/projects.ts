@@ -2,9 +2,9 @@ import { Project } from '../types';
 
 export const FEATURED_PROJECTS: Project[] = [
   {
-    id: 'ghcookwriter-v2',
-    slug: 'ghcookwriter-v2',
-    title: 'GHCOOKwriter-V2',
+    id: 'ghcookwriter',
+    slug: 'ghcookwriter',
+    title: 'GHCOOKwriter Author Site',
     subtitle: 'Flagship Client Design & Author Publishing Showcase',
     category: 'branding',
     date: '2025',
