@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from './ui/Container';
 import { Section } from './ui/Section';
 import { SectionHeading } from './ui/SectionHeading';
@@ -28,6 +28,10 @@ export const DesignSystemShowcase: React.FC = () => {
   const [btnLoading, setBtnLoading] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [inputError, setInputError] = useState('');
+
+  useEffect(() => {
+    document.title = 'Design System Showcase | Anthony W. Smith';
+  }, []);
 
   const triggerLoadingDemo = () => {
     setBtnLoading(true);
