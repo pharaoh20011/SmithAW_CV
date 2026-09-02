@@ -36,8 +36,8 @@ export const FEATURED_PROJECTS: Project[] = [
       'Role-based access control'
     ],
     image: '/assets/img/portfolio/relocatia.png',
-    liveDemoUrl: '/projects/relocatia',
-    isSubProject: false,
+    liveDemoUrl: 'https://smithtest.site',
+    isSubProject: true,
   },
   {
     id: 'hsk',

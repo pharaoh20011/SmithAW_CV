@@ -6,7 +6,7 @@ import { Input } from '../components/ui/Input';
 import { Textarea } from '../components/ui/Textarea';
 import { Button } from '../components/ui/Button';
 import { ContactFormData } from '../types';
-import { Send, CheckCircle2, AlertCircle, Mail, MapPin, Github, Linkedin, ShieldCheck } from 'lucide-react';
+import { Send, CheckCircle2, AlertCircle, Mail, MapPin, Github, Linkedin } from 'lucide-react';
 
 export const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -103,10 +103,6 @@ export const ContactPage: React.FC = () => {
                   <div className="flex items-center gap-2">
                     <MapPin className="w-4 h-4 text-brand-primary dark:text-brand-accent shrink-0" />
                     <span>United States &bull; Remote Available</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <ShieldCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                    <span>Backend Mail API Verified (/contact.php)</span>
                   </div>
                 </div>
 

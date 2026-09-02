@@ -20,7 +20,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: 'LinkedIn Profile',
-    url: 'https://linkedin.com/in/pharaoh20011', // Configurable data model
+    url: 'https://linkedin.com/in/pharaoh20011',
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
@@ -32,10 +32,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const PRESERVED_PROJECTS = [
   { name: 'Access21', path: '/access21/index.html' },
-  { name: 'GH Cook Writer', path: '/ghcookwriter/index.html' },
-  { name: 'HSK Showcase', path: '/hsk/index.html' },
-  { name: 'Jubilee Showcase', path: '/jubilee/index.html' },
-  { name: 'TAF Showcase', path: '/taf/index.html' },
+  { name: 'GHCookwriter', path: '/ghcookwriter/index.html' },
+  { name: 'Heritage Soul Kitchen', path: '/hsk/index.html' },
+  { name: 'Jubilee Junction Christian Fellowship', path: '/jubilee/index.html' },
 ];
 
 export const Footer: React.FC = () => {
@@ -86,14 +85,6 @@ export const Footer: React.FC = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link
-                  to="/design-system"
-                  className="text-brand-primary dark:text-brand-accent font-medium hover:underline focus-ring rounded-brand-xs px-1 py-0.5 inline-block"
-                >
-                  Design System
-                </Link>
-              </li>
             </ul>
           </div>
 
