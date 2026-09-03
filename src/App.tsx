@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from './components/theme/ThemeProvider';
 import { Layout } from './components/layout/Layout';
+import { ScrollToTop } from './components/utils/ScrollToTop';
 import { DesignSystemShowcase } from './components/DesignSystemShowcase';
 import { HomePage } from './pages/HomePage';
 import { AboutPage } from './pages/AboutPage';
@@ -14,6 +15,7 @@ export const App: React.FC = () => {
   return (
     <ThemeProvider>
       <Router>
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<HomePage />} />

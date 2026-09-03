@@ -24,7 +24,7 @@ export const FEATURED_PROJECTS: Project[] = [
     id: 'relocatia',
     slug: 'relocatia',
     title: 'Relocatia Platform',
-    subtitle: 'Client Relocation & Document Workflow Management',
+    subtitle: 'Personal Relocation & Document Workflow Management',
     category: 'web-app',
     date: '2026',
     stack: ['React', 'TypeScript', 'Node.js', 'Tailwind CSS'],

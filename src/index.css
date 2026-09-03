@@ -30,6 +30,11 @@
     font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
+  /* Account for sticky header offset when navigating via hash anchors */
+  section[id], [id] {
+    scroll-margin-top: 5.5rem;
+  }
+
   body {
     @apply bg-surface-light text-content-light-primary antialiased selection:bg-brand-soft selection:text-brand-primary dark:bg-surface-dark dark:text-content-dark-primary transition-colors duration-normal;
   }
