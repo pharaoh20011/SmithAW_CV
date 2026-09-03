@@ -148,7 +148,10 @@ export const ResumePage: React.FC = () => {
                   <p className="text-content-light-muted dark:text-content-dark-muted font-mono-tech">Miami Dade College</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-content-light-primary dark:text-content-dark-primary">CompTIA A+ IT Certification Training</h3>
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bold text-content-light-primary dark:text-content-dark-primary">CompTIA A+ IT Certification Training</h3>
+                    <span className="font-mono-tech text-content-light-muted dark:text-content-dark-muted">06/1999</span>
+                  </div>
                   <p className="text-content-light-muted dark:text-content-dark-muted font-mono-tech">Computer Learning Center &bull; Washington, DC</p>
                 </div>
               </div>

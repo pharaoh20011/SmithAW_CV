@@ -46,7 +46,7 @@ export const CERTIFICATIONS: Certification[] = [
   {
     id: 'comptia-a-plus',
     title: 'CompTIA A+ IT Certification',
-    issuer: 'CompTIA / Hands-on IT Training',
-    date: 'Certified',
+    issuer: 'Computer Learning Center',
+    date: '06/1999',
   },
 ];
