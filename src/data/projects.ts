@@ -40,6 +40,31 @@ export const FEATURED_PROJECTS: Project[] = [
     isSubProject: true,
   },
   {
+    id: 'signs-banners-branding',
+    slug: 'signs-banners-branding',
+    title: 'Signs & Banners Brand Collateral',
+    subtitle: 'Visual Identity & Print Graphic Design',
+    category: 'graphic-design',
+    date: '2024',
+    stack: ['Graphic Design', 'Visual Identity', 'Typography', 'Print Design', 'Branding'],
+    description: 'Professional graphic design and visual identity suite including wide-format sign artwork, promotional banner graphics, custom typography, and print design assets.',
+    keyFeatures: [
+      'Wide-format vector artwork & layout design',
+      'Custom brand color palettes & typography systems',
+      'High-resolution print-ready graphics & PDF collateral',
+      'Visual marketing collateral for physical signage'
+    ],
+    image: '/assets/img/portfolio/signs_banners.png',
+    liveDemoUrl: '/assets/img/portfolio/signs_banners.png',
+    pdfUrl: '/graphic-design/signs-banners.html',
+    pdfResources: [
+      { title: 'Access21 Brand PDF', url: '/graphic-design/access21-brand.html' },
+      { title: 'Signs & Banners PDF', url: '/graphic-design/signs-banners.html' },
+      { title: 'Tell-A-Friend Landscaping PDF', url: '/graphic-design/tell-a-friend-landscaping.html' },
+    ],
+    isSubProject: true,
+  },
+  {
     id: 'harrisons-funeral-home',
     slug: 'harrisons-funeral-home',
     title: 'Harrisons & Sons Funeral Home',
@@ -78,31 +103,6 @@ export const FEATURED_PROJECTS: Project[] = [
     isSubProject: true,
   },
   {
-    id: 'signs-banners-branding',
-    slug: 'signs-banners-branding',
-    title: 'Signs & Banners Brand Collateral',
-    subtitle: 'Visual Identity & Print Graphic Design',
-    category: 'graphic-design',
-    date: '2024',
-    stack: ['Graphic Design', 'Visual Identity', 'Typography', 'Print Design', 'Branding'],
-    description: 'Professional graphic design and visual identity suite including wide-format sign artwork, promotional banner graphics, custom typography, and print design assets.',
-    keyFeatures: [
-      'Wide-format vector artwork & layout design',
-      'Custom brand color palettes & typography systems',
-      'High-resolution print-ready graphics & PDF collateral',
-      'Visual marketing collateral for physical signage'
-    ],
-    image: '/assets/img/portfolio/signs_banners.png',
-    liveDemoUrl: '/assets/img/portfolio/signs_banners.png',
-    pdfUrl: '/assets/img/portfolio/signs_banners.pdf',
-    pdfResources: [
-      { title: 'Access21 Brand PDF', url: '/assets/img/portfolio/Access21_Brand.pdf' },
-      { title: 'Signs & Banners PDF', url: '/assets/img/portfolio/signs_banners.pdf' },
-      { title: 'Tell-A-Friend Landscaping PDF', url: '/assets/img/portfolio/taf_brand.pdf' },
-    ],
-    isSubProject: true,
-  },
-  {
     id: 'hsk',
     slug: 'hsk',
     title: 'Heritage Soul Kitchen',
@@ -138,7 +138,7 @@ export const FEATURED_PROJECTS: Project[] = [
     ],
     image: '/assets/img/portfolio/taf.png',
     liveDemoUrl: '/taf/index.html',
-    pdfUrl: '/assets/img/portfolio/taf_brand.pdf',
+    pdfUrl: '/graphic-design/tell-a-friend-landscaping.html',
     isSubProject: true,
   },
   {
@@ -157,7 +157,7 @@ export const FEATURED_PROJECTS: Project[] = [
     ],
     image: '/assets/img/portfolio/access21.png',
     liveDemoUrl: '/access21/index.html',
-    pdfUrl: '/assets/img/portfolio/Access21_Brand.pdf',
+    pdfUrl: '/graphic-design/access21-brand.html',
     isSubProject: true,
   },
   {
@@ -177,5 +177,5 @@ export const FEATURED_PROJECTS: Project[] = [
     image: '/assets/img/portfolio/jubilee_junction.png',
     liveDemoUrl: '/jubilee/index.html',
     isSubProject: true,
-  },
+  }
 ];
