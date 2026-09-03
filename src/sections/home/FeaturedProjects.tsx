@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 export const FeaturedProjects: React.FC = () => {
   // Single source of truth consumed from src/data/projects.ts
   const flagshipProject = FEATURED_PROJECTS[0]; // GHCOOKwriter Author Site
-  const otherProjects = FEATURED_PROJECTS.slice(1, 4); // Relocatia, HSK, TAF
+  const otherProjects = FEATURED_PROJECTS.slice(1, 5); // Relocatia, Signs & Banners, Harrisons & Sons, Vacation Dominican Republic
 
   return (
     <Section id="featured-projects" className="py-12 sm:py-16 md:py-20">
@@ -20,7 +20,7 @@ export const FeaturedProjects: React.FC = () => {
         <SectionHeading
           eyebrow="// 01. SELECTED WORK"
           title="Featured Projects &amp; Client Showcase"
-          subtitle="Explore client design projects, web applications, and preserved live static sub-projects."
+          subtitle="Explore client design projects, web applications, WordPress websites, graphic design work, and preserved live projects."
         />
 
         {/* Flagship Client Project Spotlight: GHCOOKwriter Author Site */}
@@ -123,8 +123,8 @@ export const FeaturedProjects: React.FC = () => {
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-normal"
                 />
                 <div className="absolute top-3 left-3">
-                  <Badge variant={project.isSubProject ? 'accent' : 'brand'}>
-                    {project.isSubProject ? 'Preserved Static App' : 'SPA Web App'}
+                  <Badge variant={project.category === 'graphic-design' ? 'brand' : project.category === 'wordpress' ? 'accent' : 'brand'}>
+                    {project.category === 'graphic-design' ? 'Graphic Design & Branding' : project.category === 'wordpress' ? 'WordPress Gutenberg' : project.category === 'web-app' ? 'Web Application' : 'Preserved Static App'}
                   </Badge>
                 </div>
               </div>

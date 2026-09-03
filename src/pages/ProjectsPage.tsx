@@ -24,7 +24,7 @@ export const ProjectsPage: React.FC = () => {
             Projects &amp; Portfolio Archive
           </h1>
           <p className="text-content-light-secondary dark:text-content-dark-secondary font-body mt-2 max-w-2xl">
-            A comprehensive showcase of client design projects, modern React &amp; TypeScript web applications, branded site builds, and live static sub-projects.
+            Explore client design projects, modern web applications, WordPress websites, graphic design work, and preserved live projects.
           </p>
         </div>
 
