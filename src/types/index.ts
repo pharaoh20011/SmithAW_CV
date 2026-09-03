@@ -16,6 +16,7 @@ export interface Project {
   liveDemoUrl?: string;
   codeUrl?: string;
   pdfUrl?: string;
+  pdfResources?: { title: string; url: string }[];
   isSubProject?: boolean;
 }
 

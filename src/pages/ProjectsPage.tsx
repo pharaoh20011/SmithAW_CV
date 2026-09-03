@@ -95,36 +95,62 @@ export const ProjectsPage: React.FC = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between w-full pt-2 border-t border-stroke-light/60 dark:border-stroke-dark/60">
-                  {project.isSubProject ? (
-                    <a
-                      href={project.liveDemoUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`Launch ${project.title} sub-project (opens in new tab)`}
-                      className="inline-flex items-center gap-1.5 text-xs font-mono-tech font-bold text-brand-primary dark:text-brand-accent hover:underline focus-ring rounded-brand-xs px-1.5 py-1"
-                    >
-                      <span>Launch Sub-Project</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </a>
-                  ) : (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-mono-tech font-bold text-brand-primary dark:text-brand-accent">
-                      <span>React SPA Feature</span>
-                      <Sparkles className="w-3.5 h-3.5" />
-                    </span>
-                  )}
+                <div className="flex flex-col gap-2.5 w-full pt-2 border-t border-stroke-light/60 dark:border-stroke-dark/60">
+                  <div className="flex items-center justify-between w-full">
+                    {project.isSubProject ? (
+                      <a
+                        href={project.liveDemoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Launch ${project.title} sub-project (opens in new tab)`}
+                        className="inline-flex items-center gap-1.5 text-xs font-mono-tech font-bold text-brand-primary dark:text-brand-accent hover:underline focus-ring rounded-brand-xs px-1.5 py-1"
+                      >
+                        <span>Launch Sub-Project</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center gap-1.5 text-xs font-mono-tech font-bold text-brand-primary dark:text-brand-accent">
+                        <span>React SPA Feature</span>
+                        <Sparkles className="w-3.5 h-3.5" />
+                      </span>
+                    )}
 
-                  {project.pdfUrl && (
-                    <a
-                      href={project.pdfUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`View ${project.title} brand PDF documentation (opens in new tab)`}
-                      className="inline-flex items-center gap-1 text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted hover:text-content-light-primary dark:hover:text-content-dark-primary focus-ring rounded-brand-xs px-1 py-0.5"
-                    >
-                      <FileText className="w-3 h-3" />
-                      <span>Brand PDF</span>
-                    </a>
+                    {project.pdfUrl && !project.pdfResources && (
+                      <a
+                        href={project.pdfUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View ${project.title} brand PDF documentation (opens in new tab)`}
+                        className="inline-flex items-center gap-1 text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted hover:text-content-light-primary dark:hover:text-content-dark-primary focus-ring rounded-brand-xs px-1 py-0.5"
+                      >
+                        <FileText className="w-3 h-3" />
+                        <span>Brand PDF</span>
+                      </a>
+                    )}
+                  </div>
+
+                  {/* Compact Graphic Design PDF Link Group */}
+                  {project.pdfResources && project.pdfResources.length > 0 && (
+                    <div className="pt-2 border-t border-stroke-light/40 dark:border-stroke-dark/40 space-y-1.5">
+                      <span className="block text-[11px] font-mono-tech uppercase font-bold text-brand-primary dark:text-brand-accent tracking-wider">
+                        Graphic Design Portfolio PDFs:
+                      </span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {project.pdfResources.map((pdf) => (
+                          <a
+                            key={pdf.title}
+                            href={pdf.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            aria-label={`View ${pdf.title} (opens in new tab)`}
+                            className="inline-flex items-center gap-1 text-[11px] font-mono-tech text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent focus-ring rounded-brand-xs px-2 py-1 bg-brand-soft/50 dark:bg-surface-dark-elevated border border-stroke-light/80 dark:border-stroke-dark/80 transition-colors"
+                          >
+                            <FileText className="w-3 h-3 text-brand-primary dark:text-brand-accent shrink-0" />
+                            <span>{pdf.title}</span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
                   )}
                 </div>
               </CardFooter>

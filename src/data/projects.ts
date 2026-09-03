@@ -95,6 +95,11 @@ export const FEATURED_PROJECTS: Project[] = [
     image: '/assets/img/portfolio/signs_banners.png',
     liveDemoUrl: '/assets/img/portfolio/signs_banners.png',
     pdfUrl: '/assets/img/portfolio/signs_banners.pdf',
+    pdfResources: [
+      { title: 'Access21 Brand PDF', url: '/assets/img/portfolio/Access21_Brand.pdf' },
+      { title: 'Signs & Banners PDF', url: '/assets/img/portfolio/signs_banners.pdf' },
+      { title: 'Tell-A-Friend Landscaping PDF', url: '/assets/img/portfolio/taf_brand.pdf' },
+    ],
     isSubProject: true,
   },
   {
