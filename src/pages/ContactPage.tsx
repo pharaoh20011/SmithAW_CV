@@ -110,20 +110,20 @@ export const ContactPage: React.FC = () => {
                   <a
                     href="https://github.com/pharaoh20011"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     aria-label="GitHub Profile (opens in new tab)"
-                    className="p-2 rounded-brand-xs bg-gray-100 dark:bg-surface-dark-elevated text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent transition-colors focus-ring"
+                    className="inline-flex items-center justify-center p-2.5 rounded-brand-xs bg-gray-100 dark:bg-surface-dark-elevated text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent transition-colors focus-ring"
                   >
-                    <Github className="w-4 h-4" />
+                    <Github className="w-4 h-4 pointer-events-none" />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/anthony-smith-0108398/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                     aria-label="LinkedIn Profile (opens in new tab)"
-                    className="p-2 rounded-brand-xs bg-gray-100 dark:bg-surface-dark-elevated text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent transition-colors focus-ring"
+                    className="inline-flex items-center justify-center p-2.5 rounded-brand-xs bg-gray-100 dark:bg-surface-dark-elevated text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent transition-colors focus-ring"
                   >
-                    <Linkedin className="w-4 h-4" />
+                    <Linkedin className="w-4 h-4 pointer-events-none" />
                   </a>
                 </div>
               </div>

@@ -16,17 +16,17 @@ export const SOCIAL_LINKS: SocialLink[] = [
   {
     name: 'GitHub Profile',
     url: 'https://github.com/pharaoh20011',
-    icon: <Github className="w-5 h-5" />,
+    icon: <Github className="w-5 h-5 pointer-events-none" />,
   },
   {
     name: 'LinkedIn Profile',
     url: 'https://www.linkedin.com/in/anthony-smith-0108398/',
-    icon: <Linkedin className="w-5 h-5" />,
+    icon: <Linkedin className="w-5 h-5 pointer-events-none" />,
   },
   {
     name: 'Email Anthony',
     url: 'mailto:aw.smith@live.com',
-    icon: <Mail className="w-5 h-5" />,
+    icon: <Mail className="w-5 h-5 pointer-events-none" />,
   },
 ];
 
@@ -60,9 +60,9 @@ export const Footer: React.FC = () => {
                   key={link.name}
                   href={link.url}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   aria-label={`${link.name} (opens in new tab)`}
-                  className="p-2.5 rounded-brand-sm text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent hover:bg-gray-100 dark:hover:bg-surface-dark-elevated transition-colors focus-ring"
+                  className="inline-flex items-center justify-center p-2.5 rounded-brand-sm text-content-light-secondary dark:text-content-dark-secondary hover:text-brand-primary dark:hover:text-brand-accent hover:bg-gray-100 dark:hover:bg-surface-dark-elevated transition-colors focus-ring"
                 >
                   {link.icon}
                 </a>
