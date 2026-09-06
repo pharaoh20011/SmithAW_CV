@@ -37,7 +37,7 @@ export const Brand: React.FC<BrandProps> = ({
         </span>
         {showTagline && (
           <span className="text-[11px] sm:text-xs font-mono-tech text-content-light-muted dark:text-content-dark-muted hidden sm:inline-block leading-none mt-0.5">
-            Front-End Developer &amp; UI/UX Designer
+            Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer
           </span>
         )}
       </div>

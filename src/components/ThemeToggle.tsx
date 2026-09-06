@@ -3,7 +3,11 @@ import { Sun, Moon } from 'lucide-react';
 import { useTheme } from './theme/ThemeProvider';
 import { IconButton } from './ui/IconButton';
 
-export const ThemeToggle: React.FC = () => {
+interface ThemeToggleProps {
+  className?: string;
+}
+
+export const ThemeToggle: React.FC<ThemeToggleProps> = ({ className = '' }) => {
   const { resolvedTheme, toggleTheme } = useTheme();
 
   return (
@@ -13,11 +17,12 @@ export const ThemeToggle: React.FC = () => {
       aria-label={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
       onClick={toggleTheme}
       title={`Switch to ${resolvedTheme === 'dark' ? 'light' : 'dark'} mode`}
+      className={className}
     >
       {resolvedTheme === 'dark' ? (
         <Sun className="w-5 h-5 text-amber-400" />
       ) : (
-        <Moon className="w-5 h-5 text-brand-supporting" />
+        <Moon className="w-5 h-5 text-amber-400 dark:text-amber-400" />
       )}
     </IconButton>
   );

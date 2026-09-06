@@ -20,7 +20,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: 'LinkedIn Profile',
-    url: 'https://linkedin.com/in/pharaoh20011',
+    url: 'https://www.linkedin.com/in/anthony-smith-0108398/',
     icon: <Linkedin className="w-5 h-5" />,
   },
   {
@@ -52,7 +52,7 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-4">
             <Brand showTagline={false} />
             <p className="text-sm font-body text-content-light-secondary dark:text-content-dark-secondary leading-relaxed max-w-sm">
-              Experienced Front-End Developer &amp; UI/UX Designer specializing in accessible web applications, responsive user interfaces, and modern component systems.
+              Experienced Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer specializing in accessible web applications, responsive user interfaces, and modern component systems.
             </p>
             <div className="flex items-center gap-3 pt-2">
               {SOCIAL_LINKS.map((link) => (

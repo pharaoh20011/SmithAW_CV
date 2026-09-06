@@ -20,7 +20,7 @@ export const ContactPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    document.title = 'Contact Anthony W. Smith | Front-End Developer';
+    document.title = 'Contact Anthony W. Smith | Front-End Developer / UI/UX Designer & Advanced AI Prompt Engineer';
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -91,7 +91,7 @@ export const ContactPage: React.FC = () => {
                   Anthony W. Smith
                 </h2>
                 <p className="text-sm font-body text-content-light-secondary dark:text-content-dark-secondary leading-relaxed">
-                  Front-End Developer &amp; UI/UX Designer dedicated to building responsive, accessible, and high-performance web experiences.
+                  Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer dedicated to building responsive, accessible, and high-performance web experiences.
                 </p>
                 <div className="space-y-2.5 pt-2 text-xs font-mono-tech text-content-light-secondary dark:text-content-dark-secondary border-t border-stroke-light/60 dark:border-stroke-dark/60">
                   <div className="flex items-center gap-2">
@@ -117,7 +117,7 @@ export const ContactPage: React.FC = () => {
                     <Github className="w-4 h-4" />
                   </a>
                   <a
-                    href="https://linkedin.com/in/pharaoh20011"
+                    href="https://www.linkedin.com/in/anthony-smith-0108398/"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="LinkedIn Profile (opens in new tab)"

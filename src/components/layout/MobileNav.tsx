@@ -67,23 +67,24 @@ export const MobileNav: React.FC<MobileNavProps> = ({
       <div
         id="mobile-navigation-menu"
         aria-label="Mobile Navigation"
-        className={`fixed top-0 right-0 z-50 h-full w-[80%] max-w-xs bg-surface-light dark:bg-surface-dark-card border-l border-stroke-light dark:border-stroke-dark shadow-brand-elevated dark:shadow-brand-elevated-dark p-6 flex flex-col justify-between transition-transform duration-normal ease-in-out ${
+        className={`fixed top-0 right-0 z-50 h-full w-[80%] max-w-xs bg-black dark:bg-white border-l border-neutral-800 dark:border-neutral-200 shadow-2xl p-6 flex flex-col justify-between transition-transform duration-normal ease-in-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div>
           {/* Top Bar inside Drawer */}
-          <div className="flex items-center justify-between pb-6 border-b border-stroke-light dark:border-stroke-dark mb-6">
-            <span className="font-heading font-bold text-sm tracking-tight text-content-light-primary dark:text-content-dark-primary">
+          <div className="flex items-center justify-between pb-6 border-b border-neutral-800 dark:border-neutral-200 mb-6">
+            <span className="font-heading font-bold text-sm tracking-tight text-white dark:text-neutral-900">
               Navigation
             </span>
             <div className="flex items-center gap-2">
-              <ThemeToggle />
+              <ThemeToggle className="text-neutral-300 hover:text-white hover:bg-neutral-800 dark:text-neutral-700 dark:hover:text-black dark:hover:bg-neutral-100" />
               <IconButton
                 variant="ghost"
                 size="sm"
                 aria-label="Close menu"
                 onClick={onClose}
+                className="text-neutral-300 hover:text-white hover:bg-neutral-800 dark:text-neutral-700 dark:hover:text-black dark:hover:bg-neutral-100"
               >
                 <X className="w-5 h-5" />
               </IconButton>
@@ -97,19 +98,22 @@ export const MobileNav: React.FC<MobileNavProps> = ({
                 key={item.path}
                 to={item.path}
                 end={item.path === '/'}
-                onClick={onClose}
+                onClick={() => {
+                  onClose();
+                  document.body.style.overflow = '';
+                }}
                 className={({ isActive }) =>
-                  `flex items-center justify-between px-4 py-3 text-base font-medium font-body rounded-brand-sm transition-colors ${
+                  `flex items-center justify-between px-4 py-3 text-base font-medium font-body rounded-brand-sm transition-colors focus-ring ${
                     isActive
-                      ? 'bg-brand-soft text-brand-primary dark:bg-brand-soft-dark dark:text-brand-accent font-semibold'
-                      : 'text-content-light-primary dark:text-content-dark-primary hover:bg-gray-100 dark:hover:bg-surface-dark-elevated'
+                      ? 'bg-neutral-800 text-white dark:bg-neutral-100 dark:text-black font-semibold'
+                      : 'text-neutral-300 hover:text-white hover:bg-neutral-800/80 dark:text-neutral-700 dark:hover:text-black dark:hover:bg-neutral-100'
                   }`
                 }
               >
                 {({ isActive }) => (
                   <>
                     <span>{item.label}</span>
-                    {isActive && <ArrowRight className="w-4 h-4 text-brand-primary dark:text-brand-accent" />}
+                    {isActive && <ArrowRight className="w-4 h-4 text-brand-accent dark:text-brand-primary" />}
                   </>
                 )}
               </NavLink>
@@ -118,11 +122,21 @@ export const MobileNav: React.FC<MobileNavProps> = ({
         </div>
 
         {/* Drawer Footer Actions */}
-        <div className="pt-6 border-t border-stroke-light dark:border-stroke-dark space-y-3">
-          <div className="w-full" onClick={onClose}>
-            <ResumeCTA variant="secondary" size="md" className="w-full justify-center" />
+        <div className="pt-6 border-t border-neutral-800 dark:border-neutral-200 space-y-3">
+          <div
+            className="w-full"
+            onClick={() => {
+              onClose();
+              document.body.style.overflow = '';
+            }}
+          >
+            <ResumeCTA
+              variant="secondary"
+              size="md"
+              className="w-full justify-center text-white bg-neutral-900 border-neutral-700 hover:bg-neutral-800 dark:text-neutral-900 dark:bg-neutral-100 dark:border-neutral-300 dark:hover:bg-neutral-200"
+            />
           </div>
-          <p className="text-[11px] font-mono-tech text-center text-content-light-muted dark:text-content-dark-muted">
+          <p className="text-[11px] font-mono-tech text-center text-neutral-400 dark:text-neutral-600">
             Anthony W. Smith &copy; {new Date().getFullYear()}
           </p>
         </div>

@@ -8,7 +8,7 @@ import { Terminal, ShieldCheck, Award, Cpu, Code2, Users } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   useEffect(() => {
-    document.title = 'About Anthony W. Smith | Front-End Developer & UI/UX Designer';
+    document.title = 'About Anthony W. Smith | Front-End Developer / UI/UX Designer & Advanced AI Prompt Engineer';
   }, []);
 
   return (
@@ -55,7 +55,7 @@ export const AboutPage: React.FC = () => {
               </div>
 
               <p className="text-content-light-secondary dark:text-content-dark-secondary font-body leading-relaxed">
-                I am a modern UI/UX and Front-End Developer with a professional background spanning several Fortune 500 corporate environments. My career bridges the gap between enterprise IT customer support, modern user interface development, and advanced AI prompt engineering.
+                I am a Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer with a professional background spanning several Fortune 500 corporate environments. My career bridges the gap between enterprise IT customer support, modern user interface development, and advanced AI prompt engineering.
               </p>
 
               <p className="text-content-light-secondary dark:text-content-dark-secondary font-body leading-relaxed">

@@ -25,7 +25,7 @@ export const ResumePage: React.FC = () => {
               Anthony W. Smith
             </h1>
             <p className="text-content-light-secondary dark:text-content-dark-secondary font-body mt-2">
-              Front-End Developer &amp; UI/UX Designer &bull; Enterprise Technical Support Specialist
+              Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer &bull; Enterprise Technical Support Specialist
             </p>
           </div>
           <div>
@@ -46,7 +46,7 @@ export const ResumePage: React.FC = () => {
               </h2>
             </div>
             <p className="text-sm font-body text-content-light-secondary dark:text-content-dark-secondary leading-relaxed">
-              Experienced Front-End Developer, UI/UX Designer, and Enterprise Technical Support Specialist. Combining formal graphic design education, hands-on enterprise application support at State Street Bank Corp., and modern front-end engineering expertise (React 18, TypeScript, Tailwind CSS, Gutenberg WordPress) to build clean, accessible, and user-centered web applications.
+              Experienced Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer, and Enterprise Technical Support Specialist. Combining formal graphic design education, hands-on enterprise application support at State Street Bank Corp., and modern front-end engineering expertise (React 18, TypeScript, Tailwind CSS, Gutenberg WordPress) to build clean, accessible, and user-centered web applications.
             </p>
           </Card>
 

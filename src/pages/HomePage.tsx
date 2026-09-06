@@ -9,7 +9,7 @@ import { FinalCTA } from '../sections/home/FinalCTA';
 
 export const HomePage: React.FC = () => {
   useEffect(() => {
-    document.title = 'Anthony W. Smith | Front-End Developer & UI/UX Designer';
+    document.title = 'Anthony W. Smith | Front-End Developer / UI/UX Designer & Advanced AI Prompt Engineer';
   }, []);
 
   return (

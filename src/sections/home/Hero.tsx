@@ -16,14 +16,14 @@ export const Hero: React.FC = () => {
             {/* Eyebrow / Tagline */}
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-brand-full bg-brand-soft text-brand-primary dark:bg-brand-soft-dark dark:text-brand-accent text-xs font-mono-tech font-bold uppercase tracking-wider border border-brand-primary/10 dark:border-brand-accent/20">
               <Sparkles className="w-3.5 h-3.5" aria-hidden="true" />
-              <span>Front-End Developer &bull; UI/UX Designer</span>
+              <span>Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-heading text-content-light-primary dark:text-content-dark-primary tracking-tight leading-[1.1]">
               Anthony W. Smith
               <span className="block text-brand-primary dark:text-brand-accent mt-1">
-                Front-End Developer &amp; UI/UX Designer
+                Front-End Developer / UI/UX Designer &amp; Advanced AI Prompt Engineer
               </span>
             </h1>
 
@@ -66,7 +66,7 @@ export const Hero: React.FC = () => {
                 <div className="w-full bg-surface-light dark:bg-surface-dark-elevated">
                   <img
                     src="/assets/img/me_san_pedro2_350x525.png"
-                    alt="Portrait of Anthony W. Smith, Front-End Developer and UI/UX Designer"
+                    alt="Portrait of Anthony W. Smith, Front-End Developer / UI/UX Designer & Advanced AI Prompt Engineer"
                     width={350}
                     height={525}
                     loading="eager"
